@@ -76,35 +76,31 @@ export function createCommands() {
       desc: 'Display available commands',
       run(args, ctx) {
         return `
+<p class="dim"><span class="yellow">ESSENTIAL COMMANDS</span></p>
+<br>
 <div class="help-grid">
-  <span class="help-cmd">help</span>        <span class="help-desc">Display available commands</span>
-  <span class="help-cmd">man</span>         <span class="help-desc">Terminal usage guide</span>
-  <span class="help-cmd">whoami</span>      <span class="help-desc">Display developer identity</span>
-  <span class="help-cmd">about</span>       <span class="help-desc">Professional introduction (or: cat about.txt)</span>
-  <span class="help-cmd">skills</span>      <span class="help-desc">Technical skills (or: cat skills.txt)</span>
-  <span class="help-cmd">education</span>   <span class="help-desc">Educational background</span>
-  <span class="help-cmd">experience</span>  <span class="help-desc">Training &amp; experience</span>
-  <span class="help-cmd">certifications</span> <span class="help-desc">Verified certifications</span>
-  <span class="help-cmd">projects</span>    <span class="help-desc">List all projects</span>
-  <span class="help-cmd">resume</span>      <span class="help-desc">Open/download resume PDF</span>
-  <span class="help-cmd">contact</span>     <span class="help-desc">Contact information</span>
-  <span class="help-cmd">socials</span>     <span class="help-desc">Professional links</span>
-  <span class="help-cmd">github</span>      <span class="help-desc">Open GitHub profile</span>
-  <span class="help-cmd">linkedin</span>    <span class="help-desc">Open LinkedIn profile</span>
-  <span class="help-cmd">pwd</span>         <span class="help-desc">Current virtual directory</span>
-  <span class="help-cmd">ls [dir]</span>    <span class="help-desc">List files in current or named directory</span>
-  <span class="help-cmd">cd &lt;dir&gt;</span>    <span class="help-desc">Navigate directories (cd .., cd ~)</span>
-  <span class="help-cmd">cat &lt;file&gt;</span>  <span class="help-desc">Display file contents</span>
-  <span class="help-cmd">tree</span>        <span class="help-desc">Directory tree overview</span>
-  <span class="help-cmd">find</span>        <span class="help-desc">List all available portfolio files</span>
-  <span class="help-cmd">open &lt;key&gt;</span> <span class="help-desc">Open an approved external link</span>
-  <span class="help-cmd">history</span>     <span class="help-desc">Command history</span>
-  <span class="help-cmd">clear</span>       <span class="help-desc">Clear terminal output</span>
-  <span class="help-cmd">date</span>        <span class="help-desc">Current date &amp; time</span>
-  <span class="help-cmd">echo &lt;text&gt;</span> <span class="help-desc">Echo text to output</span>
+  <span class="help-cmd">help</span>         <span class="help-desc">Show available commands</span>
+  <span class="help-cmd">about</span>        <span class="help-desc">About me</span>
+  <span class="help-cmd">skills</span>       <span class="help-desc">Technical skills</span>
+  <span class="help-cmd">education</span>    <span class="help-desc">Education</span>
+  <span class="help-cmd">experience</span>   <span class="help-desc">Training and experience</span>
+  <span class="help-cmd">projects</span>     <span class="help-desc">View my projects</span>
+  <span class="help-cmd">resume</span>       <span class="help-desc">View my resume</span>
+  <span class="help-cmd">contact</span>      <span class="help-desc">Contact information</span>
+  <span class="help-cmd">socials</span>      <span class="help-desc">Professional profiles</span>
+  <span class="help-cmd">clear</span>        <span class="help-desc">Clear terminal</span>
 </div>
 <br>
-<p class="dim">Tip: Use <span class="cyan">↑↓</span> for history, <span class="cyan">Tab</span> for completion.</p>
+<p class="dim"><span class="yellow">NAVIGATION</span></p>
+<br>
+<div class="help-grid">
+  <span class="help-cmd">ls</span>           <span class="help-desc">List available files</span>
+  <span class="help-cmd">cd &lt;dir&gt;</span>     <span class="help-desc">Navigate directories</span>
+  <span class="help-cmd">cat &lt;file&gt;</span>   <span class="help-desc">Read a file</span>
+  <span class="help-cmd">pwd</span>          <span class="help-desc">Current directory</span>
+</div>
+<br>
+<p class="dim">Type a command to continue.</p>
 `.trim();
       },
     },
