@@ -333,7 +333,7 @@ as a web tool.</p>
 // Set RESUME_CONFIGURED to true and provide the correct path once the PDF is placed
 // in the data/ directory.
 export const RESUME = {
-  configured: false,
+  configured: true,
   filename: 'prabhakar-r-resume.pdf',
   path: 'data/prabhakar-r-resume.pdf',
 };
