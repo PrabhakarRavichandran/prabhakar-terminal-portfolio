@@ -335,7 +335,7 @@ as a web tool.</p>
 export const RESUME = {
   configured: true,
   filename: 'prabhakar-r-resume.pdf',
-  path: 'data/prabhakar-r-resume.pdf',
+  path: './data/prabhakar-r-resume.pdf',
 };
 
 // ─── Approved external links (open command) ───────────────────────────────────
