@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prabhakar R — Terminal Portfolio</title>
+    <meta
+      name="description"
+      content="Prabhakar R — Computer Science & Engineering student. Full-stack developer, AI/ML enthusiast, and software engineering aspirant based in Chennai, Tamil Nadu, India."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Prabhakar R — Terminal Portfolio" />
+    <meta
+      property="og:description"
+      content="Prabhakar R — Computer Science & Engineering student interested in full-stack development, AI/ML, cloud technologies, and software engineering."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://prabhakarravichandran.github.io/prabhakar-terminal-portfolio/"
+    />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#211e3a" />
+
+    <!-- Favicon: keyboard emoji -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌨️</text></svg>"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Reopen prompt shown when terminal is closed -->
+    <div class="reopen-prompt" hidden aria-hidden="true">
+      <span>Terminal closed.</span>
+      <button id="reopen-btn" type="button">Reopen terminal</button>
+    </div>
+
+    <!-- Main terminal window -->
+    <div class="terminal-window" role="main" aria-label="Interactive terminal portfolio">
+      <!-- Title bar with traffic-light controls -->
+      <div class="terminal-header" role="toolbar" aria-label="Terminal window controls">
+        <div class="window-controls">
+          <button
+            class="btn close"
+            id="btn-close"
+            type="button"
+            aria-label="Close terminal"
+            title="Close"
+          ></button>
+          <button
+            class="btn minimize"
+            id="btn-minimize"
+            type="button"
+            aria-label="Minimize terminal"
+            title="Minimize"
+          ></button>
+          <button
+            class="btn fullscreen"
+            id="btn-fullscreen"
+            type="button"
+            aria-label="Toggle fullscreen"
+            title="Fullscreen"
+          ></button>
+        </div>
+        <span class="terminal-title" aria-label="Terminal title">prabhakar@portfolio: ~</span>
+      </div>
+
+      <!-- Terminal body: output + input -->
+      <div
+        class="terminal-body"
+        id="terminal"
+        role="log"
+        aria-live="polite"
+        aria-label="Terminal output"
+        tabindex="0"
+      >
+        <!-- Output is rendered here by JS -->
+      </div>
+
+      <!-- Hidden input captures all keyboard events -->
+      <input
+        id="terminal-input"
+        type="text"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        aria-label="Terminal command input"
+        aria-describedby="terminal"
+      />
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <span>&copy; 2025 Prabhakar R</span>
+      <span class="separator">&middot;</span>
+      <a
+        href="https://github.com/PrabhakarRavichandran/prabhakar-terminal-portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Source</a
+      >
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
